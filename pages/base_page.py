@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from conftest import driver
-from locators.main_page_locators import MainPageLocators, QuestionsMainPageLocators
+from locators.main_page_locators import MainPageLocators
 
 
 class BasePage:
