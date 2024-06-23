@@ -61,7 +61,7 @@ class BasePage:
 
     @allure.step('Принять cookies')
     def base_to_accept_cookies(self):
-        WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located(MainPageLocators.BUTTON_COOKIE)).click()
+        self.base_click_to_element(MainPageLocators.BUTTON_COOKIE)
 
 
     @allure.step('Переключиться на новую вкладку')
