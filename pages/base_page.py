@@ -50,7 +50,7 @@ class BasePage:
 
     @allure.step('Получить текст элемента')
     def base_get_text_of_element(self, LOCATOR):
-        WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of_element_located(LOCATOR))
+        self.base_wait_visibility_of_element_located(LOCATOR)
         return self.driver.find_element(*LOCATOR).text
 
 
