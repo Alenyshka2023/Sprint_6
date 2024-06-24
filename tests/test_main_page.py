@@ -14,7 +14,7 @@ class TestMainPage:
         test_order_page = OrderPage(driver)
         test_main_page = MainPage(driver)
         test_order_page.open_order_page_scooter()
-        test_order_page.click_on_logo_scooter_in_header()
+        test_main_page.click_on_logo_scooter_in_header()
         test_main_page.main_wait_for_load_page_title()
         test_expected_url = TestUrls.SCOOTER_MAIN_PAGE
         test_actual_url = test_main_page.base_get_current_url()

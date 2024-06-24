@@ -21,6 +21,11 @@ class MainPage(BasePage):
         self.base_click_to_element(MainPageLocators.LOGO_YANDEX)
 
 
+    @allure.step('Клик на лого "Самокат"')
+    def click_on_logo_scooter_in_header(self):
+        self.base_click_to_element(MainPageLocators.LOGO_SCOOTER)
+
+
     @allure.step('Клик на кнопку "Заказать" на хедере страницы')
     def main_click_button_order_top(self):
         self.base_click_to_element(MainPageLocators.BUTTON_ORDER_ON_HEADER)

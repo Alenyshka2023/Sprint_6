@@ -4,7 +4,6 @@ from random import choice
 from conftest import driver
 from pages.base_page import BasePage
 from data import TestUrls
-from locators.main_page_locators import MainPageLocators
 from locators.order_page_locators import OrderPageLocators
 
 
@@ -14,10 +13,6 @@ class OrderPage(BasePage):
     def open_order_page_scooter(self):
         self.base_open_url(TestUrls.SCOOTER_ORDER_PAGE)
 
-
-    @allure.step('Клик на лого Самоката')
-    def click_on_logo_scooter_in_header(self):
-        self.base_click_to_element(MainPageLocators.LOGO_SCOOTER)
 
 
     @allure.step('Ввод имени')
